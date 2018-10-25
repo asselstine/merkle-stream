@@ -21,7 +21,8 @@ module.exports = {
     // Copy our app's index.html to the build folder.
     new CopyWebpackPlugin([
       { from: './app/*.html', flatten: true },
-      { from: './app/images', to: 'images/' }
+      { from: './app/images', to: 'images/' },
+      { from: './app/stylesheets/vendor', to: 'vendor/' }
     ])
   ],
   module: {
