@@ -5,7 +5,8 @@
   "description": "Working Theory: Blockchain-focused Software Solutions",
   "scripts": {
     "build": "webpack --mode production --config webpack.prod.js",
-    "dev": "webpack-dev-server --config webpack.dev.js --mode development"
+    "dev": "webpack-dev-server --config webpack.dev.js --mode development",
+    "test": "NODE_ENV=test truffle test"
   },
   "author": "Brendan Asselstine",
   "license": "MIT",
@@ -68,6 +69,7 @@
   "dependencies": {
     "bulma": "^0.6.2",
     "classnames": "^2.2.5",
+    "debug": "^4.1.0",
     "immutability-helper": "^2.6.4",
     "openzeppelin-eth": "^2.0.2",
     "prop-types": "^15.6.0",

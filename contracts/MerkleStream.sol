@@ -5,15 +5,15 @@ import "openzeppelin-eth/contracts/token/ERC20/ERC20.sol";
 import "openzeppelin-eth/contracts/cryptography/MerkleProof.sol";
 
 contract MerkleStream is Initializable {
-  ERC20 token;
+  ERC20 public token;
 
-  uint256 sessionCount;
+  uint256 public sessionCount;
 
-  mapping (uint256 => uint256) deposits;
-  mapping (uint256 => bytes32) merkleRoots;
-  mapping (uint256 => uint256) durations;
-  mapping (uint256 => address) streamers;
-  mapping (uint256 => bool) claimed;
+  mapping (uint256 => uint256) public deposits;
+  mapping (uint256 => bytes32) public merkleRoots;
+  mapping (uint256 => uint256) public durations;
+  mapping (uint256 => address) public streamers;
+  mapping (uint256 => bool) public claimed;
 
   event OpenedStream(uint256 streamId);
 
