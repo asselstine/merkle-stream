@@ -2,3 +2,6 @@ node_modules
 .bin
 .cache
 build
+zos.dev-*
+
+.zos.session

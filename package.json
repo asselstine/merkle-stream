@@ -62,12 +62,14 @@
     "webpack-cli": "^2.0.13",
     "webpack-dev-server": "^3.1.1",
     "webpack-merge": "^4.1.2",
-    "zeppelin-solidity": "1.9.0"
+    "zeppelin-solidity": "1.9.0",
+    "zos": "^2.0.1"
   },
   "dependencies": {
     "bulma": "^0.6.2",
     "classnames": "^2.2.5",
     "immutability-helper": "^2.6.4",
+    "openzeppelin-eth": "^2.0.2",
     "prop-types": "^15.6.0",
     "react": "^16.3.0",
     "react-dom": "^16.2.0",
@@ -81,6 +83,7 @@
     "redux": "^3.7.2",
     "request": "^2.85.0",
     "tmp": "0.0.33",
-    "truffle-hdwallet-provider": "0.0.3"
+    "truffle-hdwallet-provider": "0.0.3",
+    "zos-lib": "^2.0.1"
   }
 }
